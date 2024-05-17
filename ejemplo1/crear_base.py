@@ -13,10 +13,11 @@ Base = declarative_base()
 
 
 from sqlalchemy import Column, Integer, String
-
+# La clase saludo cuando migre la informacion de la base de datos donde toma las clases y se ejevuta
+# todas las class que contenga el formato __tablename__ 
 class Saludo(Base):
     __tablename__ = 'saludos'
-
+# crea algunas variables
     id = Column(Integer, primary_key=True)
     mensaje = Column(String(200))
     tipo = Column(String(200))
