@@ -20,7 +20,7 @@ cedula = "1011019091"
 edad = 30
 cadena_sql = """INSERT INTO Autor (nombre, apellido, cedula, edad) \
 VALUES ('%s', '%s', '%s', %d);""" % (nombre, apellido, cedula, edad)
-
+print(cadena_sql)
 # ejecutar el SQL
 cursor.execute(cadena_sql)
 
